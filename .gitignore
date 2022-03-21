@@ -258,7 +258,6 @@ cython_debug/
 .history
 .ionide
 
-firstvenv/
 
 .env
 
