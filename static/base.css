@@ -3,11 +3,13 @@ font-family: 'Lobster', cursive;
 }
 
 .pinterest_footer_button {
-    font-size: .6rem;
+    font-size: .9rem;
 }
-.pinterest_footer{
+
+.pinterest_footer {
 text-align:center; margin-top: 2rem;
 }
-.pinterest_header{
+
+.pinterest_header {
     text-align:center; margin: 2rem 0; 
 }
