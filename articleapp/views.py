@@ -8,6 +8,9 @@ from django.views.generic import CreateView, DeleteView, DetailView, UpdateView,
 from articleapp.forms import ArticleCreationForm
 from articleapp.models import Article
 from articleapp.decorators import article_ownership_required
+from commentapp.forms import CommentCreationForm
+from django.views.generic.edit import FormMixin
+
 
 # Create your views here.
 
@@ -29,8 +32,9 @@ class ArticleCreateView(CreateView):
 
 
 
-class ArticleDetailView(DetailView):
+class ArticleDetailView(DetailView, FormMixin):
     model = Article
+    form_class = CommentCreationForm
     context_object_name = 'target_article'
     template_name = "articleapp/detail.html"
 
